@@ -1,24 +1,47 @@
-
-<nav class="navbar navbar-dark bg-dark mb-5">
-  <a class="navbar-brand" href="/">Angular & Bootstrap</a>
-  <div class="navbar-expand mr-auto">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">About</a>
-      <a class="nav-item nav-link" href="#">Contact</a>
-    </div>
+<nav>
+  <div class="logo">
+    <img src="assets/images/logo.png" alt="Logo"/>
   </div>
-  <div class="navbar-expand ml-auto navbar-nav">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" href="https://github.com/beeman" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://twitter.com/beeman_nl" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a class="nav-item nav-link" href="https://medium.com/@beeman" target="_blank">
-        <i class="fa fa-medium"></i>
-      </a>
-    </div>
-  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li class="sub"><a href="#">Portfolio</a>
+      <nav class="submenu">
+        <ul>
+          <li class="sub"><a href="#">Graphics</a>
+            <nav class="submenu">
+              <ul>
+                <li><a href="#">Photoshop</a></li>
+                <li><a href="#">Illustrator</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="sub"><a href="#">Programming</a>
+            <nav class="submenu">
+              <ul>
+                <li><a href="#">HTML/CSS/JS</a></li>
+                <li><a href="#">Node.JS</a></li>
+                <li><a href="#">Swift</a></li>
+                <li><a href="#">Objective-C</a></li>
+                <li><a href="#">Ruby on Rails</a></li>
+                <li><a href="#">PHP</a></li>
+              </ul>
+            </nav>
+          </li>
+          <li class="sub"><a href="#">Photography</a>
+            <nav class="submenu">
+              <ul>
+                <li><a href="#">HDR</a></li>
+                <li><a href="#">Black & White</a></li>
+                <li><a href="#">Landscapes</a></li>
+                <li><a href="#">Portraits</a></li>
+                <li><a href="#">Artistic</a></li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+      </nav>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
 </nav>
