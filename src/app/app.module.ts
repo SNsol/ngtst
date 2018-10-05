@@ -12,6 +12,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ReverseStrPipe } from './pipes/reverse-str.pipe';
 import { GooglePlacesDirective } from './directives/google-places.directive';
 
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './services/in-memory-data.service';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: '**', component: PageNotFoundComponent }
@@ -26,9 +29,15 @@ const routes: Routes = [
     GooglePlacesDirective
   ],
   imports: [
-    BrowserModule,    
+    BrowserModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
     ReactiveFormsModule,
     UIModule,
     HeroModule

@@ -11,5 +11,5 @@ export const routes: Routes = [
       ]
     }, // default route of the module
 ];
-  
+
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);
